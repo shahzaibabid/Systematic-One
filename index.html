@@ -9,8 +9,11 @@
 <link href="assets/libs/owl.carousel/dist/assets/owl.carousel.min.css" rel="stylesheet"/>
 <link href="assets/libs/aos-master/dist/aos.css" rel="stylesheet"/>
 <link href="assets/css/styles.css" rel="stylesheet"/>
+<link href="assets/css/home-redesign.css" rel="stylesheet"/>
+<link href="assets/css/agency-premium.css" rel="stylesheet"/>
 </head>
 <body>
+<div class="so-scroll-progress" aria-hidden="true"></div>
 <!-- Header -->
 <header class="header border-4 border-primary border-top position-fixed start-0 top-0 w-100">
 <div class="container">
@@ -20,7 +23,9 @@
 <img alt="logo" class="img-fluid" src="assets/images/logos/systematic-one-logo-white.png"/>
 </a>
 </div>
-<div class="d-flex align-items-center gap-4">
+<div class="d-flex align-items-center gap-4 so-header-right">
+<nav class="so-desktop-nav" aria-label="Main navigation"><a href="index.html" aria-current="page">Home</a><a href="about.html">About</a><a href="erp-services.html">ERP Services</a><a href="industries.html">Industries</a><a href="erp-implementation.html">Implementation</a><a href="contact.html">Contact</a></nav>
+<a href="contact.html" class="so-header-cta">Let's Talk <span>↗</span></a>
 <div class="btn-group">
 <button aria-expanded="false" class="btn btn-secondary toggle-menu round-45 p-2 d-flex align-items-center justify-content-center bg-white rounded-circle" data-bs-auto-close="true" data-bs-toggle="dropdown" type="button">
 <iconify-icon class="menu-icon fs-8 text-dark" icon="solar:hamburger-menu-line-duotone"></iconify-icon>
@@ -51,32 +56,38 @@
 </header>
 <!--  Page Wrapper -->
 <div class="page-wrapper overflow-hidden">
-<!--  Banner Section -->
-<section class="banner-section position-relative d-flex align-items-end min-vh-100">
-<video autoplay="" class="position-absolute top-0 start-0 w-100 h-100 object-fit-cover" loop="" muted="" playsinline="">
-<source src="assets/images/backgrounds/banner-video.mp4" type="video/mp4"/>
-</video>
-<div class="container">
-<div class="d-flex flex-column gap-4 pb-8 position-relative z-1">
-<div class="row align-items-center">
-<div class="col-xl-4">
-<div class="d-flex align-items-center gap-4" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">
-<img alt="" class="img-fluid animate-spin" src="assets/images/svgs/primary-leaf.svg"/>
-<p class="mb-0 text-white fs-5 text-opacity-70">We deliver <span class="text-primary">connected ERP solutions</span> that streamline operations, improve visibility, and support scalable growth.</p>
-</div>
-</div>
-</div>
-<div class="d-flex align-items-end gap-3" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
-<h1 class="mb-0 fs-16 text-white lh-1">Systematic One</h1>
-<a class="p-1 ps-7 bg-primary rounded-pill" href="erp-services.html">
-<span class="bg-white round-52 rounded-circle d-flex align-items-center justify-content-center">
-<iconify-icon class="fs-8 text-dark" icon="lucide:arrow-up-right"></iconify-icon>
-</span>
-</a>
-</div>
-</div>
-</div>
+<!-- Redesigned Banner Section -->
+<section class="so-hero">
+ <div class="agency-grain" aria-hidden="true"></div><div class="agency-index" aria-hidden="true">S/01&nbsp; — &nbsp;DIGITAL OPERATIONS STUDIO</div><div class="so-hero-orbit so-orbit-one"></div><div class="so-hero-orbit so-orbit-two"></div><div class="so-hero-glow so-glow-1"></div><div class="so-hero-glow so-glow-2"></div>
+ <div class="container so-hero-inner">
+  <div class="so-hero-copy">
+   <div class="so-hero-mini"><span class="so-mini-spark">✳</span> Connected systems. Clearer possibilities.</div>
+   <div class="so-eyebrow"><span class="so-pulse"></span> ERP SOFTWARE SOLUTIONS <span class="so-eyebrow-line"></span> SYSTEMATIC ONE</div>
+   <h1 class="agency-hero-title"><span class="agency-line">Systematic</span><span class="agency-line agency-title-accent">One<span class="so-dot">.</span><em class="agency-spark">✳</em></span></h1>
+   <div class="agency-kicker">TECHNOLOGY THAT MOVES BUSINESS FORWARD</div><div class="so-hero-dynamic">Your business, <span id="so-rotating-word" aria-live="off">fully connected.</span><span class="so-type-caret" aria-hidden="true"></span></div>
+   <p class="so-lead">We deliver <strong>connected ERP solutions</strong> that streamline operations, improve visibility, and support scalable growth.</p>
+   <div class="so-actions"><a class="so-primary-button" href="erp-services.html">Explore ERP Solutions <span>↗</span></a><a class="so-secondary-button" href="contact.html">Book a Consultation <span>↗</span></a></div>
+   <div class="so-proof"><span class="so-proof-line"></span><span>Strategy</span><b>·</b><span>Implementation</span><b>·</b><span>Optimization</span></div>
+  </div>
+  <div class="so-hero-visual" aria-hidden="true"><div class="agency-visual-label">SYSTEM INTELLIGENCE / LIVE</div><div class="agency-visual-ring agency-ring-a"></div><div class="agency-visual-ring agency-ring-b"></div>
+    <div class="so-visual-grid"></div>
+    <div class="so-floating-badge"><span class="so-badge-icon">✦</span><span>Smarter systems<br/><strong>Better decisions</strong></span></div>
+    <div class="so-dashboard" id="so-interactive-dashboard">
+      <div class="so-dash-sidebar"><div class="so-dash-mark">S<span>1</span></div><i class="so-side-active"></i><i></i><i></i><i></i><i></i></div>
+      <div class="so-dash-body"><div class="so-dash-top"><span>Business overview</span><div><i></i><i></i><i></i></div></div>
+       <div class="so-dash-heading"><strong>ERP Performance</strong><span>● Live overview</span></div>
+       <div class="so-metric-grid"><div class="so-metric"><small>Operations</small><strong>98.6%</strong><span>↗ Optimized</span></div><div class="so-metric"><small>Integrations</small><strong>238+</strong><span>↗ Connected</span></div><div class="so-metric"><small>Workflows</small><strong>40K+</strong><span>↗ Hours saved</span></div></div>
+       <div class="so-chart"><div class="so-chart-head"><strong>Operational visibility</strong><small>Performance analytics</small></div><div class="so-chart-bars"><i style="height:38%"></i><i style="height:53%"></i><i style="height:45%"></i><i style="height:69%"></i><i style="height:59%"></i><i style="height:80%"></i><i style="height:71%"></i><i style="height:94%"></i><i style="height:85%"></i><i style="height:100%"></i></div><div class="so-chart-label"><span>JAN</span><span>APR</span><span>JUL</span><span>OCT</span></div></div>
+      </div>
+    </div>
+    <div class="so-connect-pill"><span>✓</span> All systems connected</div><div class="so-data-chip"><span class="so-data-dot"></span> Workflow automation <strong>Active</strong></div>
+  </div>
+ </div>
+ <div class="agency-hero-side" aria-hidden="true">PRECISION IN EVERY PROCESS &nbsp;•&nbsp; SYSTEMATIC ONE</div><div class="so-hero-bottom"><div class="container"><span>BUILDING THE NEXT GENERATION OF ERP</span><span>SCROLL TO EXPLORE ↓</span></div></div>
 </section>
+<div class="agency-marquee" aria-hidden="true"><div class="agency-marquee-track">CONNECT THE DOTS <span>✳</span> SIMPLIFY THE COMPLEX <span>✳</span> BUILD FOR WHAT’S NEXT <span>✳</span> CONNECT THE DOTS <span>✳</span> SIMPLIFY THE COMPLEX <span>✳</span> BUILD FOR WHAT’S NEXT <span>✳</span></div></div>
+<div class="so-value-ribbon" aria-label="Core capabilities"><div class="container"><span><i>01</i> Strategy &amp; Discovery</span><span><i>02</i> ERP Implementation</span><span><i>03</i> Smart Integrations</span><span><i>04</i> Ongoing Optimization</span></div></div>
+<div class="agency-section-count">01 <span>/</span> WHAT WE DO <i></i></div>
 <!--  Stats & Facts Section -->
 <section class="stats-facts py-5 py-lg-11 py-xl-12 position-relative overflow-hidden">
 <div class="container">
@@ -130,7 +141,9 @@
 <img alt="" class="img-fluid" src="assets/images/backgrounds/stats-facts-bg.svg"/>
 </div>
 </section>
+<div class="so-section-divider" aria-hidden="true"><span></span><b>ENGINEERED FOR BUSINESS GROWTH</b><span></span></div>
 <!--  Featured ERP Services Section -->
+<div class="agency-section-count">02 <span>/</span> SOLUTIONS <i></i></div>
 <section class="featured-projects py-5 py-lg-11 py-xl-12 bg-light-gray">
 <div class="d-flex flex-column gap-5 gap-xl-11">
 <div class="container">
@@ -275,6 +288,7 @@
 </div>
 </section>
 <!--  Services Section -->
+<div class="agency-section-count agency-count-dark">03 <span>/</span> OUR EXPERTISE <i></i></div>
 <section class="services py-5 py-lg-11 py-xl-12 bg-dark" id="services">
 <div class="container">
 <div class="d-flex flex-column gap-5 gap-xl-10">
@@ -486,6 +500,7 @@
 </div>
 </section>
 <!--  Testimonial Section -->
+<div class="agency-section-count">04 <span>/</span> OUR CLIENTS <i></i></div>
 <section class="testimonial py-5 py-lg-11 py-xl-12 bg-light-gray">
 <div class="container">
 <div class="d-flex flex-column gap-5 gap-xl-11">
@@ -1054,6 +1069,7 @@
 </div>
 </section>
 <!--  Get in touch Section -->
+<div class="agency-contact-band"><div class="container"><span>HAVE SOMETHING IN MIND?</span><a href="contact.html">Let’s make it work <span>↗</span></a></div></div>
 <section class="get-in-touch py-5 py-lg-11 py-xl-12">
 <div class="container">
 <div class="d-flex flex-column gap-5 gap-xl-10">
@@ -1148,6 +1164,10 @@
 <script src="assets/libs/owl.carousel/dist/owl.carousel.min.js"></script>
 <script src="assets/libs/aos-master/dist/aos.js"></script>
 <script src="assets/js/custom.js"></script>
+<script src="assets/js/home-experience.js" defer></script>
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script defer src="assets/js/agency-premium.js"></script>
 <!-- solar icons -->
 <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.8/dist/iconify-icon.min.js"></script>
 </body>
